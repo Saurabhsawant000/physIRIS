@@ -17,36 +17,15 @@ TEvent::TEvent(const TEvent &evt) : TObject(evt) //
 
 void TEvent::Clear(){
 
-	Qdet_tlP.clear();
-	Qdet_blP.clear();
-	Ex_tlP.clear();
-	Ex_blP.clear();
-	YdCsIETot_tlP.clear();
-	YdCsIETot_blP.clear();
-	EB_det_tlP.clear();
-	EB_det_blP.clear(); //Calculated heavy particle energy
-	PB_det_tlP.clear(); //Calculated heavy particle momentum
-	PB_det_blP.clear(); //Calculated heavy particle momentum
-	
-	fEYd_tlP.clear();
-	fEYd_blP.clear();
-	fCCsI_blP.clear(); 
-	fCCsI_tlP.clear();     
-	fECsI_blP.clear(); 
-	fECsI_tlP.clear();
-	
-	fEb_blP.clear();
-  	fPb_blP.clear();
-  	fPby_blP.clear();
-  	fPbxcm_blP.clear();
-	fEb_tlP.clear();
-  	fPb_tlP.clear();
-  	fPby_tlP.clear();
-  	fPbxcm_tlP.clear();
-	fThetacm_blP.clear();
-	fThetacm_tlP.clear();
-	fTheta_blP.clear();
-	fTheta_tlP.clear();
+	HitQv1=-1;
+	HitQv2=-1;
+	fEYY1 =0;             //
+	fEYd2 =0; 
+	fEYd3 =0; 
+	fCCsI1=0; // HLC 6/25/17
+	fCCsI2=0; // HLC 6/25/17
+	fECsI1=0;              //
+	fECsI2=0;              //
 	
 	fEBAC = sqrt(-1.);
 	fmA = sqrt(-1.);
@@ -63,10 +42,38 @@ void TEvent::Clear(){
   	fA = sqrt(-1.);
   	fB = sqrt(-1.);
   	fC = sqrt(-1.);*/
+  	fEb1 = sqrt(-1.);
+  	fPb1 = sqrt(-1.);
+  	fPb1y = sqrt(-1.);
+  	fPb1xcm = sqrt(-1.);
+	fEb2 = sqrt(-1.);
+  	fPb2 = sqrt(-1.);
+  	fPb2y = sqrt(-1.);
+  	fPb2xcm = sqrt(-1.);
+	fEb3 = sqrt(-1.);
+  	fPb3 = sqrt(-1.);
+  	fPb3y = sqrt(-1.);
+  	fPb3xcm = sqrt(-1.);
 
 	fLP=0; //Light particle energy
 	fHP=0; //Heavy particle energy
 	fEB=0; //Measured heavy particle energy
+	fEB1=0; //Calculated heavy particle energy
+	fPB1=0; //Calculated heavy particle momentum
+	fQv1=0;
+	fEB2=0; //Calculated heavy particle energy
+	fPB2=0; //Calculated heavy particle momentum
+	fQv2=0;
+	fEB3=0; //Calculated heavy particle energy
+	fPB3=0; //Calculated heavy particle momentum
+	fQv3=0;
+
 	
+	fThetacm1=0;
+	fThetacm2=0;
+	fThetacm3=0;
+	fThetaD=0;
+	fThetaD2=0;
+	fThetaD3=0;
 }
 

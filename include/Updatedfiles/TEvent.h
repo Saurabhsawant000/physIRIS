@@ -15,8 +15,6 @@ class TEvent : public TObject {
 		
 		std::vector<Double_t>	Qdet_tlP;
 		std::vector<Double_t>	Qdet_blP;
-		std::vector<Double_t>	Ex_tlP;
-		std::vector<Double_t>	Ex_blP;
 		std::vector<Double_t>	YdCsIETot_tlP;
 		std::vector<Double_t>	YdCsIETot_blP;
 		std::vector<Double_t>	EB_det_tlP;

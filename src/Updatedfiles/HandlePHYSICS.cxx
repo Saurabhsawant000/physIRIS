@@ -127,8 +127,7 @@ Double_t EYY1=sqrt(-1.),EYY12=sqrt(-1.);
 Double_t Eb1=sqrt(-1.), Eb2=sqrt(-1.), EbU=sqrt(-1.), EbUSd=sqrt(-1.);
 Double_t EB1=sqrt(-1.), EB2=sqrt(-1.), EBU=sqrt(-1.), EBUSd=sqrt(-1.);
 Double_t PB1=sqrt(-1.), PB2=sqrt(-1.), PBU=sqrt(-1.), PBUSd=sqrt(-1.);
-Double_t Q1=sqrt(-1.), Q2=sqrt(-1.), QU=sqrt(-1.), QUSd=sqrt(-1.);
-Double_t Ex1 = sqrt(-1.), Ex2 = sqrt(-1.), ExU = sqrt(-1.) ;
+Double_t Q1=sqrt(-1.), Q2=sqrt(-1.), QU=sqrt(-1.), QUSd=sqrt(-1.), Ex = sqrt(-1.) , ExU = sqrt(-1.) ;
 Double_t Pb1y=sqrt(-1.), Pb2y=sqrt(-1.), PbUy=sqrt(-1.), PbUSdy=sqrt(-1.);
 Double_t Pb1xcm=sqrt(-1.), Pb2xcm=sqrt(-1.), PbUxcm=sqrt(-1.), PbUSdxcm=sqrt(-1.);
 
@@ -593,7 +592,6 @@ void HandlePHYSICS()
 			PB1 = sqrt(PA*PA+Pb1*Pb1-2.*PA*Pb1*cos(thetaR));
 			//Q1 = mA+ma-mb- sqrt(mA*mA+mb*mb-ma*ma-2.*(mA+EBeam)*(mb+Eb1)+2.*PA*Pb1*cos(thetaR)+2.*(EBeam+mA+ma-Eb1-mb)*ma);  //Alisher's equation 
 			Q1 = mA+ma-mB-sqrt(EB1*EB1-PB1*PB1); //Equivalent to the previous equation
-			Ex1 = 12 - Q1; //G.S Qvalue as observed in Qdet_blP[0] 
 			IrisEvent->fCCsI_blP.push_back(CCsI1);
 			IrisEvent->fECsI_blP.push_back(ECsI1);
 			IrisEvent->fEb_blP.push_back(Eb1);
@@ -603,7 +601,6 @@ void HandlePHYSICS()
 			IrisEvent->fPby_blP.push_back(Pb1y);
 			IrisEvent->fPbxcm_blP.push_back(Pb1xcm);
 			IrisEvent->Qdet_blP.push_back(Q1);
-			IrisEvent->Ex_blP.push_back(Ex1);
 			thetaCM = TMath::RadToDeg()*atan(Pb1y/Pb1xcm);
 			thetaCM = (thetaCM<0) ? thetaCM+180. : thetaCM;
 			IrisEvent->fThetacm_blP.push_back(thetaCM);
@@ -652,7 +649,6 @@ void HandlePHYSICS()
 			PB2 = sqrt(PA*PA+Pb2*Pb2-2.*PA*Pb2*cos(thetaR2));
 			//Q2 = mA+ma-mb- sqrt(mA*mA+mb*mb-ma*ma-2.*(mA+EBeam)*(mb+Eb2)+2.*PA*Pb2*cos(thetaR2)+2.*(EBeam+mA+ma-Eb2-mb)*ma);  //Alisher's equation 
 			Q2 = mA+ma-mb-sqrt(EB2*EB2-PB2*PB2); //Equivalent to the previous equation
-			Ex2 = 11.96 - Q2; //G.S Qvalue as observed in Qdet_tlP[1] 
 			IrisEvent->fCCsI_tlP.push_back(CCsI2);
 			IrisEvent->fECsI_tlP.push_back(ECsI2);
 			IrisEvent->fEb_tlP.push_back(Eb2);
@@ -662,7 +658,6 @@ void HandlePHYSICS()
 			IrisEvent->fPby_tlP.push_back(Pb2y);
 			IrisEvent->fPbxcm_tlP.push_back(Pb2xcm);
 			IrisEvent->Qdet_tlP.push_back(Q2);
-			IrisEvent->Ex_tlP.push_back(Ex2);
 			thetaCM2 = TMath::RadToDeg()*atan(Pb2y/Pb2xcm);
 			thetaCM2 = (thetaCM2<0) ? thetaCM2+180. : thetaCM2;
 			IrisEvent->fThetacm_tlP.push_back(thetaCM2);

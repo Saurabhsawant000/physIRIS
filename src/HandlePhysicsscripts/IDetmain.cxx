@@ -25,7 +25,11 @@ void IDet::Clear()
   	
 	TCsI1Channel.clear();
 	TCsI1Phi.clear();
-  	
+
+  	TYdCsI1ETot=0;
+  	TYdCsI2ETot=0;
+  	TYdCsI3ETot=0;
+
 	TSSBADC=0;
 	TSSBEnergy=0;
 	TScADC=0;
@@ -64,5 +68,6 @@ void IDet::Clear()
   	TSd2Theta.clear();
   	TSd1Phi.clear();
   	TSd2Phi.clear();
+
 }
 

@@ -44,7 +44,7 @@ LDFLAGS	      = -O2
 all: $(BINARYDIR)/physIris $(LIBDIR)/libTEvent.so
 
 $(BINARYDIR)/physIris: $(ANAOBJECTS) $(OBJECTDIR)/physIris.o 
-	$(CXX) -o $@ $(CXXFLAGS) $^ $(ROOTGLIBS) -lm -lz -lutil -lnsl -lpthread -lrt
+	$(CXX) -o $@ $(CXXFLAGS) $^ $(ROOTGLIBS) -lm -lz -lutil -lpthread -lrt
 
 # $(BINARYDIR)/physIris: $(ANAOBJECTS) $(OBJECTDIR)/physIris.o $(MIDASLIBS) $(ROOTANA)/lib/librootana.a 
 # 	$(CXX) -o $@ $(CXXFLAGS) $^ $(MIDASLIBS) $(NETDIRLIB) $(ROOTGLIBS) -lm -lz -lutil -lnsl -lpthread -lrt

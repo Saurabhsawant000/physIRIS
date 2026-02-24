@@ -19,12 +19,16 @@ void IDet::Clear()
 	TYdNeighbour.clear();
 	
 	TCsI1Mul=0;
+	TCsI2Mul=0;
   	TCsI1Energy.clear();
 	TCsI2Energy.clear();
   	TCsI1ADC.clear();
   	
+	TCsI2ADC.clear();
 	TCsI1Channel.clear();
+	TCsI2Channel.clear();
 	TCsI1Phi.clear();
+	TCsI2Phi.clear();
   	
 	TSSBADC=0;
 	TSSBEnergy=0;
@@ -64,5 +68,28 @@ void IDet::Clear()
   	TSd2Theta.clear();
   	TSd1Phi.clear();
   	TSd2Phi.clear();
+	  	
+	TYuMul=0;  
+	TYuADC.clear();
+	TYuEnergy.clear();
+  	TYuTheta.clear();// Yd theta angle                                                                       
+	TYuChannel.clear();
+	TYuNo.clear();
+	TYuRing.clear();
+	TYuNeighbour.clear();
+	
+	TSurMul=0;
+	TSusMul=0;
+	TSurEnergy.clear();
+	TSurChannel.clear();
+	TSurNeighbour.clear();
+  	TSurADC.clear();
+	TSusEnergy.clear();
+	TSusChannel.clear();
+	TSusNeighbour.clear();
+  	TSusADC.clear();
+  	TSuTheta.clear();
+  	TSuPhi.clear();
+
 }
 

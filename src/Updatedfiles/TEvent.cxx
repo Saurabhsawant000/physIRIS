@@ -19,8 +19,6 @@ void TEvent::Clear(){
 
 	Qdet_tlP.clear();
 	Qdet_blP.clear();
-	Ex_tlP.clear();
-	Ex_blP.clear();
 	YdCsIETot_tlP.clear();
 	YdCsIETot_blP.clear();
 	EB_det_tlP.clear();

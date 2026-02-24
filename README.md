@@ -7,7 +7,7 @@ treeIris requires ROOT (https://root.cern.ch).
 
 To install physIris use
 
-	git clone https://github.com/iris-triumf/physIris
+	git clone https://github.com/triumf-iris/physIRIS
 
 and compile physIris with
 

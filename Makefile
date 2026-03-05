@@ -1,6 +1,6 @@
 # Makefile
 BASEDIR	      = $(shell pwd)/..
-INSTALLDIR    = $(BASEDIR)/physIris
+INSTALLDIR    = $(BASEDIR)/physIRIS
 INCLUDEDIR    = $(INSTALLDIR)/include
 LIBDIR        = $(INSTALLDIR)/lib
 BINARYDIR     = $(INSTALLDIR)/bin

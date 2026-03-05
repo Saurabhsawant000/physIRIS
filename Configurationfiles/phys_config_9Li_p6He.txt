@@ -1,0 +1,9 @@
+RUNLIST=/runlog_lastrun.txt
+GATEFILE=/Configurationfiles/Gates/alpha.root
+GATENAME=alpha
+DEDX_I=/Configurationfiles/dedx_12C.txt
+DEDX_L=/Configurationfiles/dedx_1H.txt
+DEDX_H=/Configurationfiles/dedx_12C.txt
+RUNDEPPAR=/Configurationfiles/runDepPar.txt
+GEOMETRY=/Configurationfiles/geometry.txt
+USE_ICGATES!
